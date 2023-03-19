@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Message Board</title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <a href="/new"><button>Add a new Message</button></a>
+    <h2>All MESSAGES :)</h2>
+    <% messages.forEach((item)=>{ %>
+    <ul>
+      <li>Message: <%= item.text %></li>
+      <li>User: <%= item.user %></li>
+      <li>Added On: <%= item.added %></li>
+    </ul>
+    <% }) %>
+  </body>
+</html>
